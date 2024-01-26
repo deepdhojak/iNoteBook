@@ -13,7 +13,7 @@ const Notes = (props) => {
       getNote()
     }
     else{
-      navigate("/login")
+      navigate("/")
     }
     
     // eslint-disable-next-line
@@ -28,7 +28,7 @@ const Notes = (props) => {
     }
   const handleClick = (e)=>{
       editNote(note.id, note.etitle, note.edescription, note.etag)
-      props.showAlert("Updated successfully", "success");
+      props.showAlert("Updated successfully!", "success");
   }
   const onChange = (e)=>{
       setNote({...note, [e.target.name]: e.target.value})

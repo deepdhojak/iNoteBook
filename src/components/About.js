@@ -4,7 +4,7 @@ const About = () => {
     
     return (
       <div className="App">
-        This is About 
+        Coming Soon... 
       </div>
     )
   
